@@ -2,15 +2,6 @@
 
 import mixpanel
 
-# The map that will drive everything
-# Description of the fields -
-# from_date : datetime object from which data has to be retrieved
-# to_date : datetime object to which data has to be retrived
-# on: group by - has to be present
-# where : to form the where condition - if a condition value list has one more than one value 
-# then it is ORed and all the attrs are ANDed
-# events : the list of events to be retrieved
-
 class MixpanelSelect(object):
 
     def __init__(self, mixpanel_api_key, mixpanel_api_secret, global_map):
